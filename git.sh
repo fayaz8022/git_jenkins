@@ -24,3 +24,4 @@ then
 else
 	echo  file not commited
 fi
+git push -u origin master
