@@ -7,7 +7,7 @@ then
 	echo "file added"
 else
 	git status |grep -e "nothing to commit" > MY_GREP
-	if [ if $My_GREP = "nothing to commit" ]
+	if [ if -f ls -l MY_GREP  ]
 	then 
 		exit 
 	fi	
