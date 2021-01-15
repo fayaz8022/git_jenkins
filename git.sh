@@ -9,9 +9,9 @@ then
 else
 	echo "file not found"
 fi
-git status
-echo "do want to commit the changes type yes to commit"
-read MY_ANSWER
+        git status
+        echo "do want to commit the changes type yes to commit"
+        read MY_ANSWER
 if [ $MY_ANSWER = yes ]
 then    
 	read MY_COMMENT
@@ -19,4 +19,4 @@ then
 else
 	echo  file not commited
 fi
-git push -u origin master
+       git push -u origin master
