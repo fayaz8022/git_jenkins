@@ -1,4 +1,5 @@
 !#/bin/bash +x
+###############GIT command script#########################
 git status
 read MY_FILE 
 if [ -f $MY_FILE ]
@@ -8,8 +9,8 @@ then
 else
 	git status |grep -e "nothing to commit" > MY_GREP
 	if [ if -f ls -l MY_GREP  ]
-	then 
-		exit 0 
+	then
+		exit 0
 	fi	
 	
 	echo "file not found"
