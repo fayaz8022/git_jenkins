@@ -14,7 +14,7 @@ read MY_ANSWER
 if [ $MY_ANSWER = yes ]
 then    
 	read MY_COMMENT
-	git commit $My_FILE -m {"entercomment "$MYCOMENT""}
+	git commit $My_FILE -m echo"entercomment "$MYCOMENT""
 else
 	echo  file not commited
 fi
