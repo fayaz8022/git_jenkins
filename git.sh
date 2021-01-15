@@ -6,6 +6,12 @@ then
 	git add $MY_FILE
 	echo "file added"
 else
+	git status |grep -e "nothing to commit" > MY_GREP
+	if [ if $My_GREP = "nothing to commit" ]
+	then 
+		exit 
+	fi	
+	
 	echo "file not found"
 fi
 git status
