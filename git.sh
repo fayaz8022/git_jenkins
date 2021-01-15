@@ -7,12 +7,6 @@ then
 	git add $MY_FILE
 	echo "file added"
 else
-	git status |grep -e "nothing to commit" > MY_GREP
-	if [ if -f ls -l MY_GREP  ]
-	then
-		exit 0
-	fi	
-	
 	echo "file not found"
 fi
 git status
