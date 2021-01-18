@@ -1,6 +1,7 @@
 #/bin/bash +x
 ##################GIT command script#########################
 git status
+echo "list of files"
 read MY_FILE 
 if [ -f $MY_FILE ]
 then
