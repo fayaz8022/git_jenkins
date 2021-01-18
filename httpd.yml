@@ -1,0 +1,15 @@
+*****************installing package and starting the service************************************
+---
+- hosts: redhatnodes
+  user: root
+  become: True
+  tasks:
+    - name: Install httpd package
+      yum:
+        name: httpd
+        state: present
+    - name: ensure running
+      service:
+        name: httpd
+        state: stopped
+
