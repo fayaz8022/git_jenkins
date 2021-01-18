@@ -13,7 +13,7 @@ fi
         echo "do want to commit the changes type yes to commit"
         read MY_ANSWER
 if [ $MY_ANSWER = yes ]
-then    
+then    echo "Enter your comment" 
 	read MY_COMMENT
 	git commit $My_FILE -m "$MY_COMMENT"
 else
