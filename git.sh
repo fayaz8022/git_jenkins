@@ -1,5 +1,5 @@
 !#/bin/bash +x
-###############GIT command script#########################
+##################GIT command script#########################
 git status
 read MY_FILE 
 if [ -f $MY_FILE ]
