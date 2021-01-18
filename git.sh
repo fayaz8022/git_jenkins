@@ -1,5 +1,5 @@
 #/bin/bash +x
-##################GIT command script#########################
+##############GIT command script#########################
 git status
 echo "list of files"
 read MY_FILE 
