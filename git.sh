@@ -1,4 +1,4 @@
-!#/bin/bash +x
+#/bin/bash +x
 ##################GIT command script#########################
 git status
 read MY_FILE 
@@ -15,7 +15,7 @@ fi
 if [ $MY_ANSWER = yes ]
 then    
 	read MY_COMMENT
-	git commit $My_FILE -m echo"entercomment "$MYCOMENT""
+	git commit $My_FILE -m "$MY_COMMENT"
 else
 	echo  file not commited
 fi
